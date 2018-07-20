@@ -414,5 +414,10 @@ header {
         padding: 10px;
         border-radius: 8px;
         box-shadow: 0px 2px 8px #fafafa;
-     } 
+     }
+     .menu--desktop a {
+         font-family: 'Questrial', sans-serif;
+         color: #636363;
+         text-transform: uppercase;
+     }
 }
