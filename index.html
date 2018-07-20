@@ -40,7 +40,7 @@
             </div>
         </section>
         <section id="simulador">
-            <div class="content">
+            <div class="content col-md-4 offset-md-4">
                 <div class="title">
                     <h3>CALCULA EL AHORRO</h3>
                     <p>DE TU AUDI FULLDRIVE</p>
@@ -48,7 +48,8 @@
                 <div class="selector--group d-flex justify-content-between">
                     <div class="selector selector--car d-flex flex-column justify-content-center">
                         <p>A1</p>
-                        <img class="img-fluid" src="assets/a1.png" alt="">
+                        
+                        <div class="col selected-car bg--car d-flex"></div>
                     </div>
                     <div class="selector selector--period d-flex flex-column justify-content-center">
                         <p>6 años</p>
@@ -75,8 +76,8 @@
                 </div>
             </div>
         </section>
-        <div class="modal modal--car-selector flex-column align-items-center justify-content-center">
-            <div class="car-selector__content">
+        <div class="modal modal--car-selector align-items-center justify-content-center">
+            <div class="car-selector__content d-flex flex-column col-lg-4">
                 <div class="car-selector__header">
                     <div class="modal__header d-flex justify-content-end align-items-start">
                         <button class="btn--menu __close--car-selector active col-auto"></button>
@@ -117,8 +118,8 @@
                 </div>
             </div>
         </div>
-        <div class="modal modal--period-selector flex-column align-items-center justify-content-center">
-            <div class="period-selector__content">
+        <div class="modal modal--period-selector align-items-center justify-content-center">
+            <div class="period-selector__content d-flex flex-column col-lg-4">
                 <div class="period-selector__header">
                     <div class="modal__header d-flex justify-content-end align-items-start">
                         <button class="btn--menu __close--period-selector active col-auto"></button>
@@ -151,23 +152,23 @@
             <div class="title d-flex justify-content-center p-5">
                 <h3 class="p-0 m-0">ARGUMENTOS DE VENTA</h3>
             </div>
-            <div class="content p-5 d-flex flex-column">
-                <div class="icon--group d-flex flex-column align-items-center">
+            <div class="content p-5 d-flex flex-column flex-md-row flex-md-wrap">
+                <div class="icon--group col-lg-6 d-flex flex-column align-items-center">
                     <div class="icon d-flex justify-content-center align-items-center my-3"><i class="fas fa-chart-area"></i></div>
                     <h4>Rentabilidad</h4>
                     <p>Con el paso de tiempo, su Audi empieza a demandar operaciones de Mantenimiento y Desgastes. Con Audi fulldrive podrá realizarlas.</p>
                 </div>
-                <div class="icon--group d-flex flex-column align-items-center">
+                <div class="icon--group col-lg-6 d-flex flex-column align-items-center">
                     <div class="icon d-flex justify-content-center align-items-center my-3"><i class="fas fa-weight-hanging"></i></div>
                     <h4>Conveniencia</h4>
                     <p>Cómoda cuota mensual, invariable con el paso de los años, sin ningún compromiso de permanencia.</p>
                 </div>
-                <div class="icon--group d-flex flex-column align-items-center">
+                <div class="icon--group col-lg-6 d-flex flex-column align-items-center">
                     <div class="icon d-flex justify-content-center align-items-center my-3"><i class="fas fa-car"></i></div>
                     <h4>Revalorización del vehículo</h4>
                     <p>Mantenga su Audi Original 100% a través de nuestra red de especialistas Audi y la garantía de los Recambios Originales.</p>
                 </div>
-                <div class="icon--group d-flex flex-column align-items-center">
+                <div class="icon--group col-lg-6 d-flex flex-column align-items-center">
                     <div class="icon d-flex justify-content-center align-items-center my-3">
                         <i class="fas fa-user-alt"></i></div>
                     <h4>Exclusividad</h4>
@@ -181,8 +182,8 @@
             <div class="coberturas__title py-5 title d-flex justify-content-center">
                 <h3>COBERTURAS</h3>
             </div>
-            <div class="container__plans p-3">
-                <div class="coberturas__plan p-3">
+            <div class="container__plans p-3 p-lg-5 d-flex flex-column flex-lg-row flex-lg-wrap align-items-lg-start">
+                <div class="coberturas__plan p-3 col-lg-4 offset-lg-1">
                     <div class="plan__title title">
                         <span>PLAN</span>
                         <h3>ENTRY</h3>
@@ -202,7 +203,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="coberturas__plan p-3 mt-5">
+                <div class="coberturas__plan p-3 mt-5 mt-lg-0 col-lg-4 offset-lg-2">
                     <div class="plan__title title">
                         <span>PLAN</span>
                         <h3>PLUS</h3>
@@ -222,8 +223,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="separator my-5"></div>
-                <div id="beneficios" class="coberturas__plan pt-5 p-3">
+                <div class="separator my-5 col-lg-10 offset-lg-1"></div>
+                <div id="beneficios" class="coberturas__plan pt-5 p-3 col-lg-10 offset-lg-1">
                     <div class="plan__title title">
                         <span>BENEFICIOS</span>
                         <h3>EXTRA</h3>
@@ -249,8 +250,8 @@
             <div class="informacion__title py-5 title d-flex justify-content-center">
                 <h3>INFORMACIÓN</h3>
             </div>
-            <div class="informacion__content col-12 justify-content-around d-flex flex-wrap">
-                <div class="information__option col-5 m-1 icon--group p-3">
+            <div class="informacion__content col-12 justify-content-around d-flex flex-wrap col-lg-8 offset-lg-2 p-3">
+                <div class="information__option col-5 m-1 icon--group p-3 col-lg-2">
                     <div class="option__icon col-8 offset-2 mb-3">
                         <img class="img-fluid" src="assets/break.svg" alt="breaks">
                     </div>
@@ -258,7 +259,7 @@
                         Pastillas freno
                     </span>
                 </div>
-                <div class="information__option col-5 m-1 icon--group p-3">
+                <div class="information__option col-5 m-1 icon--group p-3 col-lg-2">
                     <div class="option__icon col-8 offset-2 mb-3">
                         <img class="img-fluid" src="assets/plates.svg" alt="breaks">
                     </div>
@@ -266,7 +267,7 @@
                         Discos de freno
                     </span>
                 </div>
-                <div class="information__option col-5 m-1 icon--group p-3">
+                <div class="information__option col-5 m-1 icon--group p-3 col-lg-2">
                     <div class="option__icon col-8 offset-2 mb-3">
                         <img class="img-fluid" src="assets/damper.svg" alt="breaks">
                     </div>
@@ -274,7 +275,7 @@
                         Amortiguación
                     </span>
                 </div>
-                <div class="information__option col-5 m-1 icon--group p-3">
+                <div class="information__option col-5 m-1 icon--group p-3 col-lg-2">
                     <div class="option__icon col-8 offset-2 mb-3">
                         <img class="img-fluid" src="assets/windshield.svg" alt="breaks">
                     </div>
@@ -282,7 +283,8 @@
                         Escobillas
                     </span>
                 </div>
-                <div class="information__option col-5 m-1 icon--group p-3">
+                <div class="w-100"></div>
+                <div class="information__option col-5 m-1 icon--group p-3 col-lg-2">
                     <div class="option__icon col-8 offset-2 mb-3">
                         <img class="img-fluid" src="assets/car-lights.svg" alt="breaks">
                     </div>
@@ -290,7 +292,7 @@
                         Lámparas
                     </span>
                 </div>
-                <div class="information__option col-5 m-1 icon--group p-3">
+                <div class="information__option col-5 m-1 icon--group p-3 col-lg-2">
                     <div class="option__icon col-8 offset-2 mb-3">
                         <img class="img-fluid" src="assets/battery.svg" alt="breaks">
                     </div>
@@ -298,7 +300,7 @@
                         Batería
                     </span>
                 </div>
-                <div class="information__option col-5 m-1 icon--group p-3">
+                <div class="information__option col-5 m-1 icon--group p-3 col-lg-2">
                     <div class="option__icon col-8 offset-2 mb-3">
                         <img class="img-fluid" src="assets/air-conditioner.svg" alt="breaks">
                     </div>
@@ -306,7 +308,7 @@
                         Guardapolvo
                     </span>
                 </div>
-                <div class="information__option col-5 m-1 icon--group p-3">
+                <div class="information__option col-5 m-1 icon--group p-3 col-lg-2">
                     <div class="option__icon col-8 offset-2 mb-3">
                         <img class="img-fluid" src="assets/car.svg" alt="breaks">
                     </div>

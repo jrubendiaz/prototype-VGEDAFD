@@ -151,12 +151,19 @@ header {
 }
 #simulador .selector--group .selector {
     width: 48%;
+    height: 200px;
     background-color: #fefefe;
     text-align: center;
     border: 1px solid #fafafa;
     padding: 10px;
     border-radius: 8px;
     box-shadow: 0px 2px 8px #fafafa;
+}
+.selected-car {
+    background-image: url('../assets/a1.png');
+    background-size: cover;
+    background-position: center center;
+    height: 180px;
 }
 .selector p{
     font-weight: 800;
@@ -361,7 +368,7 @@ header {
      box-shadow: 0px 2px 8px rgba(22,22,22, 0.05);
  }
  .selector--car {
-    width: 48%;
+    width: 45%;
     background-color: #fefefe;
     text-align: center;
     border: 1px solid #fafafa;
@@ -396,4 +403,16 @@ header {
    padding: 10px;
    border-radius: 8px;
    box-shadow: 0px 2px 8px #fafafa;
+}
+
+@media (min-width: 992px) { 
+    .selector--car {
+        width: 30%;
+        background-color: #fefefe;
+        text-align: center;
+        border: 1px solid #fafafa;
+        padding: 10px;
+        border-radius: 8px;
+        box-shadow: 0px 2px 8px #fafafa;
+     } 
 }
