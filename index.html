@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Questrial|Ubuntu:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header class="container-fluid m-0 pl-0 pr-0 d-flex flex-column">
+        <div class="nav__selectors py-2 d-flex justify-content-between align-items-center">
+            <div class="nav__logo col-auto d-flex flex-column align-items-center">
+                <h1>Audi <span>fulldrive</span></h1>
+            </div>
+            <div class="nav__menu col d-flex justify-content-end">
+                <button class="btn--menu d-flex justify-content-center flex-column align-items-center col-2"></button>
+            </div>
+        </div>
+        <nav class="menu__nav flex-column justify-content-center align-items-center">
+            <a href="#simulador" class="">Simulador</a>
+            <a href="#argumentos" class="">Argumentos de vida</a>
+            <a href="#coberturas" class="">Coberturas</a>
+            <a href="#beneficios" class="">Beneficios exclusivos</a>
+            <a href="#informacion" class="">Información</a>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <div class="bg--01"></div>
+            <div class="bg--soft"></div>
+            <div class="content offset-1 col-10 d-flex flex-column align-items-center justify-content-center">
+                <h2>Una tarifa, un mundo de servicios</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo modi fugit cum et neque blanditiis temporibus minima accusantium cupiditate odio officia sunt, est, quasi vel, eligendi corporis earum at. Accusamus.</p>
+                <span>Vehículos nuevos y parque posventa</span>
+            </div>
+        </section>
+        <section id="simulador">
+            <div class="content">
+                <div class="title">
+                    <h3>CALCULA EL AHORRO</h3>
+                    <p>DE TU AUDI FULLDRIVE</p>
+                </div>
+                <div class="selector--group d-flex justify-content-between">
+                    <div class="selector selector--car d-flex flex-column justify-content-center">
+                        <p>A1</p>
+                        <img class="img-fluid" src="assets/a1.png" alt="">
+                    </div>
+                    <div class="selector selector--period d-flex flex-column justify-content-center">
+                        <p>6 años</p>
+                        <span>90.000 Kms</span>
+                    </div>
+                </div>
+                <button class="actions offset-1 col-10 mt-5">
+                    CALCULAR
+                </button>
+                <div class="plan">
+                    <div class="content__price col-12 pt-3">
+                        <label for="price">Cuota mensual desde</label>
+                        <div class="price d-flex justify-content-center align-items-end"><span>33</span><span>'30€/mes</span></div>
+                    </div>
+                    <div class="row d-flex align-items-center justify-content-between pt-3">
+                        <div class="content__specs col">
+                            <div>6 MESES GRATIS</div>
+                        </div>
+                        <div class="content__resume d-flex justify-content-center flex-column">
+                            <label for="saving" class="m-0 p-0">Ahorro total</label>
+                            <p class="saving p-0 m-0">930€</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="modal modal--car-selector flex-column align-items-center justify-content-center">
+            <div class="car-selector__content">
+                <div class="car-selector__header">
+                    <div class="modal__header d-flex justify-content-end align-items-start">
+                        <button class="btn--menu __close--car-selector active col-auto"></button>
+                    </div>
+                </div>
+                <div class="car-selector__title title d-flex justify-content-center py-3">
+                    <h4>SELECCIONA TU MODELO</h4>
+                </div>
+                <div class="selector--grid d-flex justify-content-around flex-wrap">
+                    <div class="selector selector--car d-flex flex-column justify-content-center m-1">
+                        <p>A1</p>
+                        <img class="img-fluid" src="assets/a1.png" alt="">
+                    </div>
+                    <div class="selector selector--car d-flex flex-column justify-content-center m-1">
+                        <p>A3</p>
+                        <img class="img-fluid" src="assets/a3.png" alt="">
+                    </div>
+                    <div class="selector selector--car d-flex flex-column justify-content-center m-1">
+                        <p>A4</p>
+                        <img class="img-fluid" src="assets/a4.png" alt="">
+                    </div>
+                    <div class="selector selector--car d-flex flex-column justify-content-center m-1">
+                        <p>A5</p>
+                        <img class="img-fluid" src="assets/a5.png" alt="">
+                    </div>
+                    <div class="selector selector--car d-flex flex-column justify-content-center m-1">
+                        <p>A6</p>
+                        <img class="img-fluid" src="assets/a6.png" alt="">
+                    </div>
+                    <div class="selector selector--car d-flex flex-column justify-content-center m-1">
+                        <p>A7</p>
+                        <img class="img-fluid" src="assets/a7.png" alt="">
+                    </div>
+                </div>
+                <div class="selector--car__actions d-flex justify-content-between p-3">
+                    <button>Anteriores</button>
+                    <button>Siguientes</button>
+                </div>
+            </div>
+        </div>
+        <div class="modal modal--period-selector flex-column align-items-center justify-content-center">
+            <div class="period-selector__content">
+                <div class="period-selector__header">
+                    <div class="modal__header d-flex justify-content-end align-items-start">
+                        <button class="btn--menu __close--period-selector active col-auto"></button>
+                    </div>
+                </div>
+                <div class="period-selector__title title d-flex justify-content-center py-3">
+                    <h4>SELECCIONA EL PERIODO DEL CONTRATO</h4>
+                </div>
+                <div class="selector--grid d-flex justify-content-around flex-wrap">
+                    <div class="selector my-3 selector--period d-flex flex-column justify-content-center">
+                        <p>2 años</p>
+                        <span>30.000 Kms</span>
+                    </div>
+                    <div class="selector my-3 selector--period d-flex flex-column justify-content-center">
+                        <p>4 años</p>
+                        <span>60.000 Kms</span>
+                    </div>
+                    <div class="selector my-3 selector--period d-flex flex-column justify-content-center">
+                        <p>6 años</p>
+                        <span>90.000 Kms</span>
+                    </div>
+                    <div class="selector my-3 selector--period d-flex flex-column justify-content-center">
+                        <p>8 años</p>
+                        <span>120.000 Kms</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section id="argumentos">
+            <div class="title d-flex justify-content-center p-5">
+                <h3 class="p-0 m-0">ARGUMENTOS DE VENTA</h3>
+            </div>
+            <div class="content p-5 d-flex flex-column">
+                <div class="icon--group d-flex flex-column align-items-center">
+                    <div class="icon d-flex justify-content-center align-items-center my-3"><i class="fas fa-chart-area"></i></div>
+                    <h4>Rentabilidad</h4>
+                    <p>Con el paso de tiempo, su Audi empieza a demandar operaciones de Mantenimiento y Desgastes. Con Audi fulldrive podrá realizarlas.</p>
+                </div>
+                <div class="icon--group d-flex flex-column align-items-center">
+                    <div class="icon d-flex justify-content-center align-items-center my-3"><i class="fas fa-weight-hanging"></i></div>
+                    <h4>Conveniencia</h4>
+                    <p>Cómoda cuota mensual, invariable con el paso de los años, sin ningún compromiso de permanencia.</p>
+                </div>
+                <div class="icon--group d-flex flex-column align-items-center">
+                    <div class="icon d-flex justify-content-center align-items-center my-3"><i class="fas fa-car"></i></div>
+                    <h4>Revalorización del vehículo</h4>
+                    <p>Mantenga su Audi Original 100% a través de nuestra red de especialistas Audi y la garantía de los Recambios Originales.</p>
+                </div>
+                <div class="icon--group d-flex flex-column align-items-center">
+                    <div class="icon d-flex justify-content-center align-items-center my-3">
+                        <i class="fas fa-user-alt"></i></div>
+                    <h4>Exclusividad</h4>
+                    <p>Disfrute de sus ventajas como cliente Audi fulldrive. Priorización de la cita en taller, descuento en la compra de Accesorios Originales Audi, asistencia en carretera 24 horas / 365 días al año y vehículo de sustitución en caso de avería mecánica o eléctrica entre otros.</p>
+                </div>
+            </div>
+        </section>
+        <section id="coberturas">
+            <div class="bg--02"></div>
+            <div class="bg--soft"></div>
+            <div class="coberturas__title py-5 title d-flex justify-content-center">
+                <h3>COBERTURAS</h3>
+            </div>
+            <div class="container__plans p-3">
+                <div class="coberturas__plan p-3">
+                    <div class="plan__title title">
+                        <span>PLAN</span>
+                        <h3>ENTRY</h3>
+                    </div>
+                    <div class="plan__specs d-flex flex-column">
+                        <div class="specs__spec d-flex pl-2">
+                            <div class="spec__check col-1 d-flex justify-content-center align-items-center"><i class="fas fa-check"></i></div>
+                            <div class="spec__text col">Servicio de <strong> inspección técnica </strong>.</div>
+                        </div>
+                        <div class="specs__spec d-flex pl-2">
+                            <div class="spec__check col-1 d-flex justify-content-center align-items-center"><i class="fas fa-check"></i></div>
+                            <div class="spec__text col">Servicio de <strong>mantenimiento</strong> con cambio de aceite.</div>
+                        </div>
+                        <div class="specs__spec d-flex pl-2">
+                            <div class="spec__check col-1 d-flex justify-content-center align-items-center"><i class="fas fa-info"></i></div>
+                            <div class="spec__text col">Pastillas de freno.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="coberturas__plan p-3 mt-5">
+                    <div class="plan__title title">
+                        <span>PLAN</span>
+                        <h3>PLUS</h3>
+                    </div>
+                    <div class="plan__specs d-flex flex-column">
+                        <div class="specs__spec d-flex pl-2">
+                            <div class="spec__check col-1 d-flex justify-content-center align-items-center"><i class="fas fa-check"></i></div>
+                            <div class="spec__text col">Servicio de <strong> inspección técnica </strong>.</div>
+                        </div>
+                        <div class="specs__spec d-flex pl-2">
+                            <div class="spec__check col-1 d-flex justify-content-center align-items-center"><i class="fas fa-check"></i></div>
+                            <div class="spec__text col">Servicio de <strong>mantenimiento</strong> con cambio de aceite.</div>
+                        </div>
+                        <div class="specs__spec d-flex pl-2">
+                            <div class="spec__check col-1 d-flex justify-content-center align-items-center"><i class="fas fa-check"></i></div>
+                            <div class="spec__text col">Pastillas de freno.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="separator my-5"></div>
+                <div id="beneficios" class="coberturas__plan pt-5 p-3">
+                    <div class="plan__title title">
+                        <span>BENEFICIOS</span>
+                        <h3>EXTRA</h3>
+                    </div>
+                    <div class="plan__specs d-flex flex-column">
+                        <div class="specs__spec d-flex pl-2">
+                            <div class="spec__check col-1 d-flex justify-content-center align-items-center"><i class="fas fa-check"></i></div>
+                            <div class="spec__text col">Asistencia en carretera 24 horas, 365 días al año durante 10 años.</div>
+                        </div>
+                        <div class="specs__spec d-flex pl-2">
+                            <div class="spec__check col-1 d-flex justify-content-center align-items-center"><i class="fas fa-check"></i></div>
+                            <div class="spec__text col">Vehículo de sustitución Audi en caso de avería mecánica o eléctrica.</div>
+                        </div>
+                        <div class="specs__spec d-flex pl-2">
+                            <div class="spec__check col-1 d-flex justify-content-center align-items-center"><i class="fas fa-check"></i></div>
+                            <div class="spec__text col">Lavado del vehículo.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="informacion" class="d-flex flex-column">
+            <div class="informacion__title py-5 title d-flex justify-content-center">
+                <h3>INFORMACIÓN</h3>
+            </div>
+            <div class="informacion__content col-12 justify-content-around d-flex flex-wrap">
+                <div class="information__option col-5 m-1 icon--group p-3">
+                    <div class="option__icon col-8 offset-2 mb-3">
+                        <img class="img-fluid" src="assets/break.svg" alt="breaks">
+                    </div>
+                    <span>
+                        Pastillas freno
+                    </span>
+                </div>
+                <div class="information__option col-5 m-1 icon--group p-3">
+                    <div class="option__icon col-8 offset-2 mb-3">
+                        <img class="img-fluid" src="assets/plates.svg" alt="breaks">
+                    </div>
+                    <span>
+                        Discos de freno
+                    </span>
+                </div>
+                <div class="information__option col-5 m-1 icon--group p-3">
+                    <div class="option__icon col-8 offset-2 mb-3">
+                        <img class="img-fluid" src="assets/damper.svg" alt="breaks">
+                    </div>
+                    <span>
+                        Amortiguación
+                    </span>
+                </div>
+                <div class="information__option col-5 m-1 icon--group p-3">
+                    <div class="option__icon col-8 offset-2 mb-3">
+                        <img class="img-fluid" src="assets/windshield.svg" alt="breaks">
+                    </div>
+                    <span>
+                        Escobillas
+                    </span>
+                </div>
+                <div class="information__option col-5 m-1 icon--group p-3">
+                    <div class="option__icon col-8 offset-2 mb-3">
+                        <img class="img-fluid" src="assets/car-lights.svg" alt="breaks">
+                    </div>
+                    <span>
+                        Lámparas
+                    </span>
+                </div>
+                <div class="information__option col-5 m-1 icon--group p-3">
+                    <div class="option__icon col-8 offset-2 mb-3">
+                        <img class="img-fluid" src="assets/battery.svg" alt="breaks">
+                    </div>
+                    <span>
+                        Batería
+                    </span>
+                </div>
+                <div class="information__option col-5 m-1 icon--group p-3">
+                    <div class="option__icon col-8 offset-2 mb-3">
+                        <img class="img-fluid" src="assets/air-conditioner.svg" alt="breaks">
+                    </div>
+                    <span>
+                        Guardapolvo
+                    </span>
+                </div>
+                <div class="information__option col-5 m-1 icon--group p-3">
+                    <div class="option__icon col-8 offset-2 mb-3">
+                        <img class="img-fluid" src="assets/car.svg" alt="breaks">
+                    </div>
+                    <span>
+                        Otros
+                    </span>
+                </div>
+            </div>
+            <div class="informacion__modal flex-column">
+                <div class="modal__header d-flex justify-content-end align-items-start">
+                    <button class="btn--menu __close--modal active col-auto"></button>
+                </div>
+                <div class="modal__title title p-5 mb-5">
+                    <h3>LAMPARAS ORIGINALES AUDI</h3>
+                    <p>Garantía de una máxima luminosidad</p>
+                </div>
+                <div class="modal__paragraph px-5 py-2">
+                    <div class="title">
+                        <h4>¿Para que sirven?</h4>
+                        <p>
+                            Las lámparas sirven para conseguir una visión y detección seguras, se necesitan fuentes de luz de primera clase.
+                        </p>
+                    </div>
+                </div>
+                <div class="modal__paragraph px-5 py-2">
+                    <div class="title">
+                        <h4>¿Cuándo se cambian?</h4>
+                        <p>
+                            Es importante revisar el estado de las bombillas en cada mantenimiento, ya que a veces la pérdida gradual de la luminosidad no es fácilmente perceptible, y es entonces cuando el riesgo de accidente es mayor.
+                        </p>
+                    </div>
+                </div>
+                <div class="modal__paragraph px-5 py-2">
+                    <div class="title">
+                        <h4>Consecuencias de un mal funcionamiento</h4>
+                        <p>
+                            Una buena iluminación de la calzada solo se consigue cuando el sistema de visibilidad funciona correctamente y está ajustado de modo adecuado. Una iluminación insuficiente incrementa el riesgo de accidente.
+                        </p>
+                    </div>
+                </div>
+                <div class="modal__paragraph px-5 py-2">
+                    <div class="title">
+                        <h4>Características de las lámparas originales Audi</h4>
+                        <ul>
+                            <li>Disponibles para todas las necesidades de iluminación de un vehículo de la marca Audi.</li>
+                            <li>Potencia luminosa permanente según la norma CEE.</li>
+                            <li>Ahorro de tiempo gracias a su durabilidad.</li>
+                            <li>Las Lámparas Originales garantizan el equilibrio perfecto de los componentes del Sistema Original de visibilidad (pilotos, faros, interruptores, conmutadores, líquido limpiacristales, escobillas, parabrisas).</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>    
+</body>
+</html>
