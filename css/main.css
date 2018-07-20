@@ -8,6 +8,14 @@ h1, h2, h3, h4, h5 {
 p, span, label, a, button, div {
     font-family: 'Open Sans', sans-serif;
 }
+.title h3{
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    color: rgba(250, 10, 31, 0.8);
+    font-size: 2em;
+    font-weight: 800;
+    letter-spacing: 0.2em;
+}
 .title h4 {
     font-family: 'Questrial', sans-serif;
     color: #636363;
@@ -17,7 +25,8 @@ button {
     color: #ffffff;
     padding: 15px 25px;
     border: none;
-    font-weight: 400;
+    font-weight: 600;
+    letter-spacing: 0.1em;
 }
 .btn--menu::after, .btn--menu::before {
     width: 20px;
@@ -136,6 +145,7 @@ header {
 #simulador {
     padding: 40px 20px;
     background-color: #F6F7F7;
+    transition: all 600ms ease;
 }
 #simulador .content {
     padding: 20px;
@@ -143,31 +153,22 @@ header {
     box-shadow: 0px 2px 8px #efefef;
 }
 #simulador .title {
-    padding: 20px 0;
+    padding-top: 20px;
 }
-#simulador h3, #simulador p{
+#simulador h3, #simulador p, .modal--car-selector p, #period-grid p{
     font-family: 'Questrial', sans-serif;
     text-align: center;
 }
-#simulador .selector--group .selector {
-    width: 48%;
-    height: 200px;
-    background-color: #fefefe;
-    text-align: center;
-    border: 1px solid #fafafa;
-    padding: 10px;
-    border-radius: 8px;
-    box-shadow: 0px 2px 8px #fafafa;
+#simulador p {
+    letter-spacing: 0.1em;
 }
-.selected-car {
-    background-image: url('../assets/a1.png');
-    background-size: cover;
-    background-position: center center;
-    height: 180px;
+.selector {
+    margin: 15px 0;
 }
-.selector p{
+#simulador .selector p, .modal--car-selector p, #period-grid p{
     font-weight: 800;
     font-size: 2.5em;
+    letter-spacing: 0em;
     margin-bottom: 0;
     padding-bottom: 0;
 }
@@ -175,6 +176,40 @@ header {
     font-weight: 100;
     font-size: 1.2em;
 }
+.selected-option {
+    background-color: #ffffff;
+    border: 1px solid #f5f5f5;
+    text-align: center;
+    padding: 10px;
+    border-radius: 3px;
+    box-shadow: 0px 2px 8px #fafafa;
+}
+.text__container p {
+    line-height: 1;
+}
+.text__container label {
+    font-size: 0.9em;
+    font-family: 'Questrial', sans-serif;
+    color: #636363;
+    line-height: 1;
+    margin-bottom: 0px;
+}
+#simulador .subtext__container p, #period-grid .subtext__container p {
+    line-height: 1;
+    font-size: 2em;
+}
+.subtext__container label {
+    line-height: 0;
+    font-size: 0.7em;
+    letter-spacing: 0em;
+    color: #636363;
+}
+label[for="selected"] {
+    font-family: 'Questrial', sans-serif;
+    color: #363636;
+    margin-bottom: 0px;
+}
+
 #simulador .plan {
     border-top: 2px dashed #f0f0f0;
     margin-top: 20px;
@@ -185,17 +220,17 @@ header {
     background-color: rgba(250, 10, 31, 0.8);
     border-radius: 100px;
     color: #ffffff; 
-    font-size: 3em;
-    padding: 20px 0;
+    font-size: 2.5em;
+    padding: 40px 0;
     font-weight: 800;
 }
 #simulador .plan .price span:first-child {
     font-size: 1.2em;
-    line-height: 1;
+    line-height: 0;
 }
 #simulador .plan .price span:last-child {
     font-size: 0.5em;
-    line-height: 1;
+    line-height: 0;
     font-weight: 400;
 }
 .content__price label {
@@ -223,15 +258,11 @@ header {
     font-size: 3em;
     line-height: 1;
 }
-.title h3{
-    font-family: 'Open Sans', sans-serif;
-    text-transform: uppercase;
-    color: rgba(250, 10, 31, 0.8);
+.subtext__container p {
     font-size: 2em;
     font-weight: 800;
-    letter-spacing: 0.3em;
+    letter-spacing: 0em;
 }
-
 /* ARGUMENTOS */
 #argumentos {
     background-color: rgba(250, 10, 31, 0.8);
@@ -350,6 +381,9 @@ header {
  }
 
  /* MODAL DE SELECCIÓN DE VEHÍCULO */
+ #car-model {
+     text-transform: uppercase;
+ }
  .modal--car-selector {
      width: 100%;
      height: 100vh;
@@ -363,11 +397,13 @@ header {
      display: flex;
  }
  .car-selector__content {
-     width: 95%;
+     width: 90%;
+     height: 90%;
+     overflow: auto;
      background-color: #ffffff;
      box-shadow: 0px 2px 8px rgba(22,22,22, 0.05);
  }
- .selector--car {
+ .modal--car-selector .selector--car {
     width: 45%;
     background-color: #fefefe;
     text-align: center;
@@ -420,4 +456,8 @@ header {
          color: #636363;
          text-transform: uppercase;
      }
+}
+
+.primary {
+    color: rgba(250, 10, 31, 0.7);
 }

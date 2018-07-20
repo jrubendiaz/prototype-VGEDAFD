@@ -50,108 +50,76 @@
             <div class="content col-md-4 offset-md-4">
                 <div class="title">
                     <h3>CALCULA EL AHORRO</h3>
-                    <p>DE TU AUDI FULLDRIVE</p>
+                    <p>DE TU AUDI <strong> FULLDRIVE </strong></p>
                 </div>
-                <div class="selector--group d-flex justify-content-between">
-                    <div class="selector selector--car d-flex flex-column justify-content-center">
-                        <p>A1</p>
-                        
-                        <div class="col selected-car bg--car d-flex"></div>
+                
+                <div class="selector--group d-flex flex-column justify-content-between">
+                    <div class="selector selector--car col-12 d-flex flex-column justify-content-center">
+                        <label for="selected">SELECCIONA TU MODELO</label>
+                        <div id="selected-car" class="selected-option d-flex justify-content-between">                        
+                            <div class="text__container col-6 d-flex flex-column align-items-start">
+                                <label for="model">MODELO</label><p id="car-model">A1</p>
+                            </div>
+                            <div class="img__container col-6 mr-0 pr-0 d-flex align-items-center justify-content-center">
+                                <img id="img-car" class="img-fluid" src="assets/a1.png" alt="Audi A1">
+                            </div>    
+                        </div>                        
                     </div>
-                    <div class="selector selector--period d-flex flex-column justify-content-center">
-                        <p>6 años</p>
-                        <span>90.000 Kms</span>
-                    </div>
+
+                    <div id="period-selector" class="selector selector--car col-12 d-flex flex-column justify-content-center">
+                        <label for="selected">SELECCIONA TU PERIODO</label>
+                        <div class="selected-option d-flex justify-content-between">                        
+                            <div class="text__container col-6 d-flex flex-column align-items-start">
+                                <label for="years">AÑOS</label> 
+                                <p id="years">6</p>
+                            </div>
+                            <div class="col-6 subtext__container d-flex flex-column align-items-end justify-content-center">
+                                <p id="kms">90.000</p>
+                                <label for="kms">Kms</label>
+                            </div>    
+                        </div>                        
+                    </div> 
                 </div>
-                <button class="actions offset-1 col-10 mt-5">
+                <button id="calculate-button" class="actions offset-1 col-10 mt-3">
                     CALCULAR
                 </button>
-                <div class="plan">
-                    <div class="content__price col-12 pt-3">
-                        <label for="price">Cuota mensual desde</label>
+                <div id="plan" class="plan d-none p-0">
+                    <div class="content__price col-12 pt-3 px-0 d-flex flex-column">
+                        <label class="mb-0 text-center" for="price">Cuota mensual desde</label>
                         <div class="price d-flex justify-content-center align-items-end"><span>33</span><span>'30€/mes</span></div>
                     </div>
-                    <div class="row d-flex align-items-center justify-content-between pt-3">
-                        <div class="content__specs col">
-                            <div>6 MESES GRATIS</div>
+                    <div class="row d-flex align-items-center justify-content-between p-3 mt-3">
+                        <div class="col subtext__container d-flex flex-column align-items-start justify-content-center">
+                            <label for="kms">6 MESES</label>
+                            <p class="mb-0 pb-0">GRATIS</p>
                         </div>
-                        <div class="content__resume d-flex justify-content-center flex-column">
-                            <label for="saving" class="m-0 p-0">Ahorro total</label>
-                            <p class="saving p-0 m-0">930€</p>
+                        <div class="col subtext__container d-flex flex-column align-items-end justify-content-center">
+                            <label for="kms">AHORRO TOTAL</label>
+                            <p class="mb-0 pb-0 primary">930€</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <div class="modal modal--car-selector align-items-center justify-content-center">
-            <div class="car-selector__content d-flex flex-column col-lg-4">
+        <div class="modal modal--car-selector align-items-center justify-content-center py-1">
+            <div class="car-selector__content d-flex flex-column col-lg-4 px-0">
                 <div class="car-selector__header">
-                    <div class="modal__header d-flex justify-content-end align-items-start">
+                    <div class="modal__header d-flex justify-content-end align-items-start mb-3">
                         <button class="btn--menu __close--car-selector active col-auto"></button>
                     </div>
                 </div>
-                <div class="car-selector__title title d-flex justify-content-center py-3">
-                    <h4>SELECCIONA TU MODELO</h4>
-                </div>
-                <div class="selector--grid d-flex justify-content-around flex-wrap">
-                    <div class="selector selector--car d-flex flex-column justify-content-center m-1">
-                        <p>A1</p>
-                        <img class="img-fluid" src="assets/a1.png" alt="">
-                    </div>
-                    <div class="selector selector--car d-flex flex-column justify-content-center m-1">
-                        <p>A3</p>
-                        <img class="img-fluid" src="assets/a3.png" alt="">
-                    </div>
-                    <div class="selector selector--car d-flex flex-column justify-content-center m-1">
-                        <p>A4</p>
-                        <img class="img-fluid" src="assets/a4.png" alt="">
-                    </div>
-                    <div class="selector selector--car d-flex flex-column justify-content-center m-1">
-                        <p>A5</p>
-                        <img class="img-fluid" src="assets/a5.png" alt="">
-                    </div>
-                    <div class="selector selector--car d-flex flex-column justify-content-center m-1">
-                        <p>A6</p>
-                        <img class="img-fluid" src="assets/a6.png" alt="">
-                    </div>
-                    <div class="selector selector--car d-flex flex-column justify-content-center m-1">
-                        <p>A7</p>
-                        <img class="img-fluid" src="assets/a7.png" alt="">
-                    </div>
-                </div>
-                <div class="selector--car__actions d-flex justify-content-between p-3">
-                    <button>Anteriores</button>
-                    <button>Siguientes</button>
+                <div id="car-grid" class="selector--grid d-flex justify-content-around flex-wrap px-4 mb-3 col-12">
                 </div>
             </div>
         </div>
         <div class="modal modal--period-selector align-items-center justify-content-center">
-            <div class="period-selector__content d-flex flex-column col-lg-4">
+            <div class="period-selector__content d-flex flex-column col-lg-4 px-0">
                 <div class="period-selector__header">
-                    <div class="modal__header d-flex justify-content-end align-items-start">
+                    <div class="modal__header d-flex justify-content-end align-items-start mb-3">
                         <button class="btn--menu __close--period-selector active col-auto"></button>
                     </div>
                 </div>
-                <div class="period-selector__title title d-flex justify-content-center py-3">
-                    <h4>SELECCIONA EL PERIODO DEL CONTRATO</h4>
-                </div>
-                <div class="selector--grid d-flex justify-content-around flex-wrap">
-                    <div class="selector my-3 selector--period d-flex flex-column justify-content-center">
-                        <p>2 años</p>
-                        <span>30.000 Kms</span>
-                    </div>
-                    <div class="selector my-3 selector--period d-flex flex-column justify-content-center">
-                        <p>4 años</p>
-                        <span>60.000 Kms</span>
-                    </div>
-                    <div class="selector my-3 selector--period d-flex flex-column justify-content-center">
-                        <p>6 años</p>
-                        <span>90.000 Kms</span>
-                    </div>
-                    <div class="selector my-3 selector--period d-flex flex-column justify-content-center">
-                        <p>8 años</p>
-                        <span>120.000 Kms</span>
-                    </div>
+                <div id="period-grid" class="selector--grid d-flex justify-content-around flex-wrap px-4 mb-3 col-12">
                 </div>
             </div>
         </div>
