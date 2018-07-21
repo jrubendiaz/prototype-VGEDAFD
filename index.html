@@ -5,13 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Questrial|Ubuntu:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,800|Questrial|Ubuntu:400,700|Montserrat:600" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
 
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+    <div class="bg--01"></div>
+    <div class="bg--soft"></div>
     <header class="container-fluid m-0 pl-0 pr-0 d-flex flex-column">
         <div class="nav__selectors py-2 d-flex justify-content-between flex-lg-column align-items-center">
             <div class="nav__logo col-auto d-flex flex-column align-items-center">
@@ -20,7 +22,7 @@
             <div class="nav__menu col d-flex justify-content-end d-lg-none">
                 <button class="btn--menu d-flex justify-content-center flex-column align-items-center col-2"></button>
             </div>
-            <nav class="d-none d-lg-flex menu--desktop my-3">
+            <nav class="d-none d-lg-flex menu--desktop my-5">
                 <a href="#simulador" class="mx-5">Simulador</a>
                 <a href="#argumentos" class="mx-5">Argumentos de vida</a>
                 <a href="#coberturas" class="mx-5">Coberturas</a>
@@ -38,11 +40,9 @@
     </header>
     <main>
         <section id="home">
-            <div class="bg--01"></div>
-            <div class="bg--soft"></div>
             <div class="content offset-1 col-10 d-flex flex-column align-items-center justify-content-center">
-                <h2>Una tarifa, un mundo de servicios</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo modi fugit cum et neque blanditiis temporibus minima accusantium cupiditate odio officia sunt, est, quasi vel, eligendi corporis earum at. Accusamus.</p>
+                <h2 class="f--montserrat">Una tarifa, un mundo de servicios</h2>
+                <p class="col-lg-6">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo modi fugit cum et neque blanditiis temporibus minima accusantium cupiditate odio officia sunt, est, quasi vel, eligendi corporis earum at. Accusamus.</p>
                 <span>Vehículos nuevos y parque posventa</span>
             </div>
         </section>
@@ -54,22 +54,23 @@
                 </div>
                 
                 <div class="selector--group d-flex flex-column justify-content-between">
-                    <div class="selector selector--car col-12 d-flex flex-column justify-content-center">
+                    <div class="selector selector--car col-12 d-flex flex-column justify-content-center px-0">
                         <label for="selected">SELECCIONA TU MODELO</label>
-                        <div id="selected-car" class="selected-option d-flex justify-content-between">                        
-                            <div class="text__container col-6 d-flex flex-column align-items-start">
-                                <label for="model">MODELO</label><p id="car-model">A1</p>
+                        <div id="selected-car" class="selected-option d-flex justify-content-between pr-0">                        
+                            <div class="text__container col-6 d-flex flex-column align-items-start justify-content-center">
+                                <label for="model">MODELO</label>
+                                <p id="car-model">A1</p>
                             </div>
-                            <div class="img__container col-6 mr-0 pr-0 d-flex align-items-center justify-content-center">
+                            <div class="img__container col-6 mr-0 pr-0 d-flex align-items-center justify-content-end">
                                 <img id="img-car" class="img-fluid" src="assets/a1.png" alt="Audi A1">
                             </div>    
                         </div>                        
                     </div>
 
-                    <div id="period-selector" class="selector selector--car col-12 d-flex flex-column justify-content-center">
+                    <div id="period-selector" class="selector selector--car col-12 d-flex flex-column justify-content-center px-0">
                         <label for="selected">SELECCIONA TU PERIODO</label>
                         <div class="selected-option d-flex justify-content-between">                        
-                            <div class="text__container col-6 d-flex flex-column align-items-start">
+                            <div class="text__container col-6 d-flex flex-column align-items-start justify-content-center">
                                 <label for="years">AÑOS</label> 
                                 <p id="years">6</p>
                             </div>
@@ -80,7 +81,7 @@
                         </div>                        
                     </div> 
                 </div>
-                <button id="calculate-button" class="actions offset-1 col-10 mt-3">
+                <button id="calculate-button" class="actions col-12 mt-3">
                     CALCULAR
                 </button>
                 <div id="plan" class="plan d-none p-0">
@@ -128,22 +129,22 @@
                 <h3 class="p-0 m-0">ARGUMENTOS DE VENTA</h3>
             </div>
             <div class="content p-5 d-flex flex-column flex-md-row flex-md-wrap">
-                <div class="icon--group col-lg-6 d-flex flex-column align-items-center">
+                <div class="icon--group offset-lg-2 col-lg-4 d-flex flex-column align-items-center">
                     <div class="icon d-flex justify-content-center align-items-center my-3"><i class="fas fa-chart-area"></i></div>
                     <h4>Rentabilidad</h4>
                     <p>Con el paso de tiempo, su Audi empieza a demandar operaciones de Mantenimiento y Desgastes. Con Audi fulldrive podrá realizarlas.</p>
                 </div>
-                <div class="icon--group col-lg-6 d-flex flex-column align-items-center">
+                <div class="icon--group col-lg-4 d-flex flex-column align-items-center">
                     <div class="icon d-flex justify-content-center align-items-center my-3"><i class="fas fa-weight-hanging"></i></div>
                     <h4>Conveniencia</h4>
                     <p>Cómoda cuota mensual, invariable con el paso de los años, sin ningún compromiso de permanencia.</p>
                 </div>
-                <div class="icon--group col-lg-6 d-flex flex-column align-items-center">
+                <div class="icon--group col-lg-4 offset-lg-2 d-flex flex-column align-items-center">
                     <div class="icon d-flex justify-content-center align-items-center my-3"><i class="fas fa-car"></i></div>
                     <h4>Revalorización del vehículo</h4>
                     <p>Mantenga su Audi Original 100% a través de nuestra red de especialistas Audi y la garantía de los Recambios Originales.</p>
                 </div>
-                <div class="icon--group col-lg-6 d-flex flex-column align-items-center">
+                <div class="icon--group col-lg-4 d-flex flex-column align-items-center">
                     <div class="icon d-flex justify-content-center align-items-center my-3">
                         <i class="fas fa-user-alt"></i></div>
                     <h4>Exclusividad</h4>
@@ -157,8 +158,8 @@
             <div class="coberturas__title py-5 title d-flex justify-content-center">
                 <h3>COBERTURAS</h3>
             </div>
-            <div class="container__plans p-3 p-lg-5 d-flex flex-column flex-lg-row flex-lg-wrap align-items-lg-start">
-                <div class="coberturas__plan p-3 col-lg-4 offset-lg-1">
+            <div class="container__plans p-3 p-lg-5 d-flex flex-column flex-lg-row flex-lg-wrap justify-content-center align-items-lg-center">
+                <div class="coberturas__plan p-3 col-lg-3 mr-5">
                     <div class="plan__title title">
                         <span>PLAN</span>
                         <h3>ENTRY</h3>
@@ -178,7 +179,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="coberturas__plan p-3 mt-5 mt-lg-0 col-lg-4 offset-lg-2">
+                <div class="coberturas__plan p-3 mt-5 mt-lg-0 col-lg-3">
                     <div class="plan__title title">
                         <span>PLAN</span>
                         <h3>PLUS</h3>
@@ -198,8 +199,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="separator my-5 col-lg-10 offset-lg-1"></div>
-                <div id="beneficios" class="coberturas__plan pt-5 p-3 col-lg-10 offset-lg-1">
+                <div class="separator my-5 col-lg-7"></div>
+                <div class="w-100 d-none d-lg-block"></div>
+                <div id="beneficios" class="coberturas__plan pt-5 p-3 col-lg-6">
                     <div class="plan__title title">
                         <span>BENEFICIOS</span>
                         <h3>EXTRA</h3>

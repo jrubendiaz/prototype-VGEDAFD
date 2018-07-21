@@ -5,6 +5,8 @@ let informationOptions = document.querySelectorAll('.information__option');
 let modal = document.querySelector('.informacion__modal');
 let closeButton = document.querySelector('.__close--modal');
 let calculateButton = document.querySelector('#calculate-button');
+let menuA = document.querySelectorAll('.menu__nav a');
+let menuButton = document.querySelector('.btn--menu');
 
 /* LISTADO DE COCHES */
 let cars = ['a1', 'a3', 'a4', 'a5', 'a6', 'a7', 'a8', 'q2'];
@@ -37,20 +39,22 @@ var active = false;
 /* Functions */
 function showModal() {
     modal.classList.add('active');
+    disableScroll();
 }
 function closeModal() {
     modal.classList.remove('active');
+    enableScroll();
 }
 function showCarSelector() {
     disableScroll();
     let grid = document.querySelector('#car-grid');
     grid.innerHTML = "";
     cars.forEach(car => {
-        let carHTML = `<div onclick="selectCar('${car}')" class="selected-option d-flex justify-content-between my-1">                        
+        let carHTML = `<div onclick="selectCar('${car}')" class="selected-option d-flex justify-content-between my-1 col-12">                        
         <div class="text__container col-6 d-flex flex-column align-items-start justify-content-center">
             <label for="model">MODELO</label><p id="car-model">${car}</p>
         </div>
-        <div class="img__container col-6 mr-0 pr-0 d-flex align-items-center justify-content-center">
+        <div class="img__container col-6 mr-0 pr-0 d-flex align-items-center justify-content-end">
             <img id="img-car" class="img-fluid" src="assets/${car}.png" alt="Audi ${car}">
         </div>    
         </div>`;
@@ -120,8 +124,22 @@ function showPlan() {
     plan.classList.add('d-none');
     plan.classList.remove('d-none');
 }
-/* Listeners */
 
+function backgroundControl() {
+    let bg01 = document.body.querySelector('.bg--01');
+    let header = document.querySelector('header').getBoundingClientRect().height;
+    let home = document.querySelector('#home').getBoundingClientRect().height;
+    bg01.style.height = `${header + home}px`;
+
+    let coberturas = document.querySelector('#coberturas');
+    let bg = coberturas.querySelector('.bg--02');
+    let height = coberturas.getBoundingClientRect().height;
+    bg.style.height = `${height}px`;
+    console.log(coberturas.getBoundingClientRect().height);
+}
+
+document.onload = backgroundControl();
+/* Listeners */
 button.addEventListener('click', () => {
     active = !active;
     active ? button.classList.add('active') : button.classList.remove('active');
@@ -144,3 +162,9 @@ carSelectorCloseBotton.addEventListener('click', closeCarSelector);
 periodSelectorButton.addEventListener('click', showPeriodSelector);
 periodSelectorCloseBotton.addEventListener('click', closePeriodSelector);
 calculateButton.addEventListener('click', showPlan);
+menuA.forEach(a => {
+    a.addEventListener('click', enableScroll);
+})
+menuButton.addEventListener('click', () => {
+    menuButton.classList.contains('active') ? disableScroll() : enableScroll();
+})
