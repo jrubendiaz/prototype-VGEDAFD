@@ -354,6 +354,7 @@ label[for="selected"] {
  }
  .information__option span {
     font-family: 'Questrial', sans-serif;
+    font-size: 0.7em;
     text-transform: uppercase;
     color: #ffffff;
     text-align: center;     
