@@ -28,6 +28,10 @@ button {
     font-weight: 600;
     letter-spacing: 0.1em;
 }
+.btn--menu {
+    height: 50px;
+    width: 50px;
+}
 .btn--menu::after, .btn--menu::before {
     width: 20px;
     height: 4px;
