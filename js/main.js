@@ -126,6 +126,7 @@ function showPlan() {
 }
 
 function backgroundControl() {
+    console.log('back');
     let bg01 = document.body.querySelector('.bg--01');
     let header = document.querySelector('header').getBoundingClientRect().height;
     let home = document.querySelector('#home').getBoundingClientRect().height;
@@ -135,10 +136,10 @@ function backgroundControl() {
     let bg = coberturas.querySelector('.bg--02');
     let height = coberturas.getBoundingClientRect().height;
     bg.style.height = `${height}px`;
-    console.log(coberturas.getBoundingClientRect().height);
 }
 
 document.onload = backgroundControl();
+window.addEventListener("resize", backgroundControl);
 /* Listeners */
 button.addEventListener('click', () => {
     active = !active;
